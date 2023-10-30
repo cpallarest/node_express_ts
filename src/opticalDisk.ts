@@ -1,4 +1,4 @@
-export class opticalDisk{
+export abstract class opticalDisk{
     #name:string;
     #size: number;
     #file: BinaryData[] = [];
@@ -38,4 +38,6 @@ export class opticalDisk{
     set type(type:string){
         this.#type = type;
     }
+
+    abstract toString():string;
 }
