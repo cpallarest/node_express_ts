@@ -1,5 +1,5 @@
 export interface IStorage{
     read(filename:string):String;
-    write(data: BinaryData):void;
+    write(data: string):void;
     delete(filename:string): void;
 }
